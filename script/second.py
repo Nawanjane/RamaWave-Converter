@@ -9,7 +9,7 @@ def wavelength_to_raman_shift(wavelength_nm):
     return (1 / laser_wavelength_nm - 1 / wavelength_nm) * 1e7
 
 # Read the data efficiently
-file_path = '/Users/leopard/Desktop/position_01.asc'  # Adjust the file path
+file_path = 'Data/position_01.asc'  # Adjust the file path
 data = pd.read_csv(file_path, sep='\t', header=None, nrows=1600, dtype={0: 'float64', 1: 'int64'})
 data.columns = ['Wavelength_nm', 'Count']
 

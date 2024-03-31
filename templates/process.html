@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Processing</title>
+</head>
+<body>
+    <h1>Upload and Process File</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file">Select file to upload:</label>
+        <input type="file" name="file" accept=".txt,.asc,.zip">
+        <br>
+        <label for="laser_wavelength">Laser Wavelength (nm):</label>
+        <input type="number" name="laser_wavelength" value="534.0">
+        <br>
+        <label for="nrows">Number of rows (nrows):</label>
+        <input type="number" name="nrows" value="1600">
+        <br>
+        <input type="submit" value="Process">
+    </form>
+</body>
+</html>
+

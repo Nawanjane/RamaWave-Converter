@@ -35,7 +35,7 @@ def process_asc_file(file_path, laser_wavelength_nm):
 def process_directory(directory, laser_wavelength_nm):
     for root, dirs, files in os.walk(directory):
         for file in files:
-            if file.endswith('.asc'):
+            if file.endswith('.txt') or file.endswith('.asc') or file.endswith('*'):
                 full_path = os.path.join(root, file)
                 print(f"Processing {full_path}")
                 process_asc_file(full_path, laser_wavelength_nm)
